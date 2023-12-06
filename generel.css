@@ -1,0 +1,170 @@
+/***********************************  RESET  ***********************************/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+/***********************************  BILLEDER  ***********************************/
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo {
+  width: 200px;
+}
+
+/***********************************  TEKST  ***********************************/
+
+h1 {
+  font-family: "Fugaz One", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+h2 {
+  font-family: "Fugaz One", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+h3 {
+  font-family: "Fugaz One", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+  font-style: italic;
+
+  color: #333333;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.lys_txt {
+  color: #f2f2f2;
+}
+
+/***********************************  LINKS  ***********************************/
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  color: #04668c;
+}
+
+/***********************************  LISTER  ***********************************/
+
+ul {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+
+  text-transform: uppercase;
+  color: #333333;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0;
+}
+
+li {
+  padding: 0 1rem;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+/***********************************  HEADER  ***********************************/
+
+header {
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #f2f2f2;
+  padding: 0.25rem;
+  margin-bottom: 0;
+}
+
+/***********************************  BURGERMENU  ***********************************/
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #04668c;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #f2f2f2;
+    position: absolute;
+    left: 0;
+    top: 65px;
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 2rem 0;
+  }
+}
