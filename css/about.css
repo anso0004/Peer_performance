@@ -17,7 +17,16 @@ img {
   position: relative;
   bottom: -55px;
 }
-/* .om_os-1_1_1 {
+
+.om_os-1_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-} */
+}
+
+@media screen and (max-width: 800px) {
+  .om_os-1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
