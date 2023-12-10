@@ -29,4 +29,20 @@ img {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
+
+  .tekst1 {
+    position: relative;
+    padding: 2rem;
+  }
+
+  .tekst2 {
+    position: relative;
+    bottom: 9rem;
+    color: #f2f2f2;
+  }
+
+  .baggrundsfirgur_blaa {
+    position: relative;
+    bottom: -55px;
+  }
 }
