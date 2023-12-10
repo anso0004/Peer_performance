@@ -2,7 +2,17 @@ img {
   width: 100%;
 }
 
-.om_os-1_1_1 {
+.tekst {
+  position: relative;
+  bottom: 9rem;
+  color: #f2f2f2;
+}
+
+.baggrundsfirgur_blaa {
+  position: relative;
+  bottom: -55px;
+}
+/* .om_os-1_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
+} */
