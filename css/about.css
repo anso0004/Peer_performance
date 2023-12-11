@@ -4,13 +4,19 @@ img {
 
 .tekst1 {
   position: relative;
+  text-align: center;
   padding: 2rem;
 }
 
 .tekst2 {
   position: relative;
-  bottom: 9rem;
+  bottom: 310px;
   color: #f2f2f2;
+  top: 188%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 40%;
+  font-size: 30px;
 }
 
 .baggrundsfirgur_blaa {
@@ -21,6 +27,11 @@ img {
 .om_os-1_1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  margin: 10px;
+  gap: 22px;
+  position: relative;
+  bottom: 94px;
 }
 
 @media screen and (max-width: 800px) {
@@ -28,6 +39,7 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    margin-top: 50px;
   }
 
   .tekst1 {
@@ -36,13 +48,12 @@ img {
   }
 
   .tekst2 {
-    position: relative;
-    bottom: 9rem;
-    color: #f2f2f2;
+    transform: translateY(-50%);
+    width: 90%;
+    font-size: 0.8em;
   }
 
   .baggrundsfirgur_blaa {
-    position: relative;
-    bottom: -55px;
+    margin-bottom: 50px;
   }
 }
