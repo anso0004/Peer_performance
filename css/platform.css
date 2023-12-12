@@ -1,0 +1,101 @@
+.grid_ikoner img {
+  width: 42%;
+  height: auto;
+}
+.top_flip,
+.bund_flip {
+  transform: scaleX(-1);
+  margin-bottom: -0.1rem;
+  display: block;
+  width: 105%;
+}
+
+@media (min-width: 800px) {
+  /**** IKONER ****/
+  /* .grid_ikoner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .paere_billede {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .paere_tekst {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .hjerne_billede {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .hjerne_tekst {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .graf_billede {
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .graf_tekst {
+    display: grid;
+    grid-column: 3;
+    grid-row: 2;
+  } */
+  .ikoner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .blinkende_paere,
+  .graf {
+    padding: 0 50px 0 50px;
+  }
+  /**** APP ****/
+  .grid_app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .app_billede {
+    display: grid;
+    grid-column: 1;
+  }
+  .app_tekst {
+    display: grid;
+    grid-column: 2;
+  }
+
+  /**** VISION ****/
+  .grid_vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  .vision_overksrift {
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .vision_billede {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  .vision_tekst {
+    display: grid;
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 800px) {
+  .top,
+  .bund {
+    display: none;
+  }
+}
