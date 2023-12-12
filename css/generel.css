@@ -296,18 +296,18 @@ select {
 /***********************************  HEXAGONER  ***********************************/
 
 .hex {
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
 .hex_1 {
   background-color: #daebd2;
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   aspect-ratio: 1/1;
   width: 20%;
   padding: 3rem;
 }
 .hex_2 {
   background-color: #dbeef5;
-  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   aspect-ratio: 1/1;
   width: 20%;
   padding: 3rem;
