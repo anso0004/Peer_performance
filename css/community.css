@@ -10,6 +10,10 @@ h2 {
   text-align: center;
 }
 
+video {
+  width: 100%;
+}
+
 /*********************************** HEXAGONER ****************************/
 /******* GRØN HEXAGON *******/
 .hex_3 {
@@ -127,5 +131,9 @@ h2 {
   /******* FIGUR PÅSÆTTER BUNDEN *******/
   .bund {
     visibility: visible;
+  }
+  /*********************************** FEEDBACK ***************************/
+  .feedback {
+    margin-top: -2rem;
   }
 }
