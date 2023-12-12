@@ -1,0 +1,21 @@
+img {
+  width: 100%;
+}
+
+.vi_skaber {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.klub_1_raekke {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.klub_2_raekke {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  gap: 3rem;
+}
