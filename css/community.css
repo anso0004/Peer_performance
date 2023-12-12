@@ -2,38 +2,130 @@ img {
   width: 100%;
 }
 
-.vi_skaber {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+h1 {
+  text-align: center;
 }
 
-.klub_1_raekke {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+h2 {
+  text-align: center;
 }
 
-.klub_2_raekke {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  gap: 3rem;
-}
-
-.blaa_bagrund {
-  background-color: #022e40;
-  height: 4rem;
-  margin-bottom: -0.1rem;
-}
-
+/*********************************** HEXAGONER ****************************/
+/******* GRØN HEXAGON *******/
 .hex_3 {
   clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   background-color: #daebd2;
   padding: 2.5rem;
+  width: 90%;
 }
-
+/******* BLÅ HEXAGON *******/
 .hex_4 {
   clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
   background-color: #dbeef5;
   padding: 2.5rem;
+  width: 90%;
+}
+
+/******************************* CITAT MOBIL *************************/
+/******* BLÅ BAGGRUND (FIRKANT -TOP OG BUND) *******/
+.blaa_bagrund {
+  height: 16rem;
+  background-color: #022e40;
+  padding-top: 3.5rem;
+}
+/******* FIGUR FJERNER TOPPEN *******/
+.top {
+  visibility: hidden;
+}
+
+/******* FIGUR FJERNER BUNDEN *******/
+.bund {
+  visibility: hidden;
+}
+/******* CITAT STYLING *******/
+.citat {
+  background-color: #022e40;
+  color: #f2f2f2;
+}
+
+/****************************** DESKTOP ****************************/
+/*************************** FØRSTE DEL AF SITET ************************/
+@media (min-width: 800px) {
+  .vi_skaber {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .foerste_del {
+    margin-top: 2rem;
+  }
+  #community_overskrift {
+    margin-left: -8rem;
+  }
+  .community_tekst {
+    margin-left: 7rem;
+    margin-top: 2rem;
+    padding-right: 4rem;
+  }
+
+  /*********************** SAMARBEJDSPARTNERE **********************/
+  /******* HELE DIV'EN *******/
+  .rum {
+    margin-bottom: 2rem;
+    margin-top: 7rem;
+  }
+
+  /******* 1. RÆKKE *******/
+  .klub_1_raekke {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  /******* 2. RÆKKE *******/
+  .klub_2_raekke {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 9rem;
+    gap: 3rem;
+    width: 70%;
+  }
+  /******* HEXAGON 3 (GRØN BAGGRUND) *******/
+  .hex_3 {
+    clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    background-color: #daebd2;
+    padding: 2.5rem;
+  }
+  /******* HEXAGON 3 (BLÅ BAGGRUND) *******/
+  .hex_4 {
+    clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    background-color: #dbeef5;
+    padding: 2.5rem;
+  }
+
+  /***************************** CITAT DESKTOP *************************/
+  /******* BLÅ BAGGRUND (FIRKANT -TOP OG BUND) *******/
+  .blaa_bagrund {
+    background-color: #022e40;
+    height: 25rem;
+    margin-bottom: -0.1rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  /******* FIGUR PÅSÆTTER TOPPEN *******/
+  .top {
+    visibility: visible;
+  }
+
+  /******* FIGUR PÅSÆTTER BUNDEN *******/
+  .bund {
+    visibility: visible;
+  }
 }
