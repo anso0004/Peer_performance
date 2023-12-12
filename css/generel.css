@@ -278,11 +278,6 @@ select {
   text-align: center;
 }
 
-.blaa {
-  background-color: #022e40;
-  padding: 2rem 1.5rem;
-}
-
 .baggrund_1 {
   background-color: #6aa64e;
 }
@@ -328,4 +323,8 @@ select {
   margin-top: -0.1rem;
   display: block;
   width: 105%;
+}
+.blaa {
+  background-color: #022e40;
+  padding: 2rem 1.5rem;
 }
