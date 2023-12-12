@@ -1,59 +1,44 @@
 img {
   width: 100%;
 }
-
-.tekst1 {
-  position: relative;
-  text-align: center;
-  padding: 2rem;
-}
-
-.tekst2 {
-  position: relative;
-  bottom: 310px;
-  color: #f2f2f2;
-  top: 188%;
-  left: 5%;
-  transform: translateY(-50%);
-  width: 40%;
-  font-size: 30px;
+.om_os-1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin-top: 50px;
 }
 
 .baggrundsfirgur_blaa {
-  position: relative;
-  bottom: -55px;
+  background-image: url("../img/baggrundsfirgur_blaa.svg");
+  margin-bottom: 50px;
+  background-size: cover;
+  min-height: 300px;
+  aspect-ratio: 1521 / 748;
+  width: 100%;
 }
 
-.om_os-1_1_1 {
+.tekst1 {
+  position: relative;
+  padding: 2rem;
+}
+
+.hvem_er_vi {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+.hvem_er_vi div {
   padding: 10px;
-  margin: 10px;
-  gap: 22px;
-  position: relative;
-  bottom: 94px;
 }
 
-@media screen and (max-width: 800px) {
+.hex {
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+@media screen and (min-width: 800px) {
   .om_os-1_1_1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin-top: 50px;
-  }
-
-  .tekst1 {
-    position: relative;
-    padding: 2rem;
-  }
-
-  .tekst2 {
-    transform: translateY(-50%);
-    width: 90%;
-    font-size: 0.8em;
-  }
-
-  .baggrundsfirgur_blaa {
-    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    margin: 10px;
+    gap: 22px;
   }
 }
