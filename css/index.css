@@ -1,0 +1,240 @@
+/***********************************  VARIABLER  ***********************************/
+
+.html {
+  --gul: #ffa600;
+  --blaa: #022e40;
+  --gron: #6aa64e;
+  --lys: #f2f2f2;
+  --mørk: #333333;
+
+  --font_1: "Open Sans", sans-serif;
+  --font_2: "Fugaz One", sans-serif;
+}
+
+/***********************************  FLEX  ***********************************/
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/***********************************  BILLEDER  ***********************************/
+
+.checkmark {
+  width: 2rem;
+  margin: 0.25rem;
+}
+
+.video {
+  height: 450px;
+}
+
+/***********************************  HEXAGONER  ***********************************/
+
+/* .hex {
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+.hex_1 {
+  background-color: #daebd2;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  aspect-ratio: 1/1;
+  width: 20%;
+  padding: 3rem;
+}
+.hex_2 {
+  background-color: #dbeef5;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  aspect-ratio: 1/1;
+  width: 20%;
+  padding: 3rem;
+} */
+
+/***********************************  KNAPPER  ***********************************/
+
+.knap_1 {
+  background-color: var(--gul);
+  border-radius: 5px;
+  padding: 0.5rem;
+
+  font-family: var(--font_1);
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--lys);
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.knap_2 {
+  border-style: solid;
+  border-color: #ffa600;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #ffa600;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+button {
+  background-color: #ffa600;
+  border-radius: 5px;
+  padding: 0.5rem;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+/**********************************  SPECIALS  **********************************/
+
+/* .blaa {
+  background-color: #022e40;
+  padding: 2rem 1.5rem;
+}
+
+.baggrund_1 {
+  background-color: #6aa64e;
+}
+
+.luft {
+  padding: 2rem 1.5rem;
+}
+
+.right_txt {
+  text-align: right;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+} */
+
+/* body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #333333;
+}
+
+main {
+  background-color: #f2f2f2;
+}
+
+p {
+  max-width: 65ch;
+} */
+
+/***********************************  FORM  ***********************************/
+/* 
+form {
+  padding: 2.5rem 0 1.5rem;
+  border-radius: 8px;
+  display: grid;
+  gap: 0.75rem;
+  max-width: 10px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  color: #f2f2f2;
+}
+
+label,
+input,
+textarea,
+select {
+  display: block;
+}
+
+.form-felt {
+  display: grid;
+  gap: 1rem;
+} */
+
+/***********************************  FOOTER  ***********************************/
+
+/* .social_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social_icon_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+footer {
+  background-color: #022e40;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.pf {
+  font-size: 1rem;
+  padding: 0;
+} */
+
+/***********************************  DESKTOP  ***********************************/
+
+@media (min-width: 800px) {
+  /* HEADER
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0.5rem 2rem;
+    gap: 2rem;
+    overflow-x: auto;
+  } */
+
+  .order {
+    order: -1;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+
+    margin: 2rem 10%;
+  }
+
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+
+    margin: 2rem 10%;
+  }
+
+  .rum {
+    margin: 2rem 10%;
+  }
+}
