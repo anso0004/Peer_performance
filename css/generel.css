@@ -1,10 +1,15 @@
-/***********************************  RESET  ***********************************/
+/***********************************  RESET + BASE  ***********************************/
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #333333;
+}
+
+main {
   background-color: #f2f2f2;
 }
 
@@ -14,11 +19,13 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  margin: 2rem auto;
 }
 
 .logo {
   width: 200px;
   padding: 1rem;
+  margin: 0;
 }
 
 /***********************************  TEKST  ***********************************/
@@ -61,6 +68,7 @@ p {
   font-size: 1rem;
   color: #333333;
   margin: 0;
+  max-width: 65ch;
 }
 
 .lys_txt {
@@ -87,7 +95,8 @@ a:hover {
 
 ul {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
 
   text-transform: uppercase;
   color: #333333;
@@ -101,6 +110,37 @@ li {
 
 header nav ul {
   list-style: none;
+}
+
+/***********************************  FOOTER  ***********************************/
+
+.social_flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social_icon_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+footer {
+  background-color: #022e40;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.pf {
+  font-size: 1rem;
+  padding: 0;
 }
 
 /***********************************  HEADER  ***********************************/
@@ -173,4 +213,102 @@ header {
   nav.active .menu li {
     margin: 2rem 0;
   }
+}
+
+/***********************************  HEADER DESKTOP  ***********************************/
+
+@media (min-width: 800px) {
+  /* HEADER */
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0.5rem 2rem;
+    gap: 2rem;
+    overflow-x: auto;
+  }
+}
+
+/***********************************  FORM  ***********************************/
+
+form {
+  padding: 2.5rem 0 1.5rem;
+  border-radius: 8px;
+  display: grid;
+  gap: 0.75rem;
+  max-width: 10px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  color: #f2f2f2;
+}
+
+label,
+input,
+textarea,
+select {
+  display: block;
+}
+
+.form-felt {
+  display: grid;
+  gap: 1rem;
+}
+
+/***********************************  SPECIALS  ***********************************/
+
+.right_txt {
+  text-align: right;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blaa {
+  background-color: #022e40;
+  padding: 2rem 1.5rem;
+}
+
+.baggrund_1 {
+  background-color: #6aa64e;
+}
+
+.luft {
+  padding: 2rem 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .rum {
+    margin: 2rem 10%;
+  }
+}
+
+/***********************************  HEXAGONER  ***********************************/
+
+.hex {
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+.hex_1 {
+  background-color: #daebd2;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  aspect-ratio: 1/1;
+  width: 20%;
+  padding: 3rem;
+}
+.hex_2 {
+  background-color: #dbeef5;
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  aspect-ratio: 1/1;
+  width: 20%;
+  padding: 3rem;
 }
