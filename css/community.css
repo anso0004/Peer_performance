@@ -25,3 +25,15 @@ img {
   height: 4rem;
   margin-bottom: -0.1rem;
 }
+
+.hex_3 {
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  background-color: #daebd2;
+  padding: 2.5rem;
+}
+
+.hex_4 {
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  background-color: #dbeef5;
+  padding: 2.5rem;
+}
