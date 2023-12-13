@@ -2,55 +2,26 @@
   width: 42%;
   height: auto;
 }
-.top_flip,
-.bund_flip {
-  transform: scaleX(-1);
-  margin-bottom: -0.1rem;
-  display: block;
-  width: 105%;
+.vision_con {
+  position: relative;
 }
-
+.hex_1_placering {
+  position: absolute;
+}
+.hex_2_placering {
+  position: absolute;
+}
+.order {
+  order: -1;
+}
 @media (min-width: 800px) {
   /**** IKONER ****/
-  /* .grid_ikoner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-  .paere_billede {
-    display: grid;
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .paere_tekst {
-    display: grid;
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .hjerne_billede {
-    display: grid;
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .hjerne_tekst {
-    display: grid;
-    grid-column: 2;
-    grid-row: 2;
-  }
-  .graf_billede {
-    display: grid;
-    grid-column: 3;
-    grid-row: 1;
-  }
-  .graf_tekst {
-    display: grid;
-    grid-column: 3;
-    grid-row: 2;
-  } */
   .ikoner {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin: 2rem 10%;
+    gap: 40px;
   }
   .blinkende_paere,
   .graf {
@@ -60,14 +31,14 @@
   .grid_app {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 2rem 10%;
+    gap: 4rem;
   }
-  .app_billede {
-    display: grid;
-    grid-column: 1;
-  }
-  .app_tekst {
-    display: grid;
-    grid-column: 2;
+  .flex_tekst {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-self: center;
   }
 
   /**** VISION ****/
@@ -75,27 +46,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr;
+    margin: 2rem 10%;
   }
-  .vision_overksrift {
+
+  /**** TILMELDING ****/
+  .grid_tilmelding {
     display: grid;
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .vision_billede {
-    display: grid;
-    grid-column: 2;
-    grid-row: 1 / span 2;
-  }
-  .vision_tekst {
-    display: grid;
-    grid-column: 1;
-    grid-row: 2;
+    grid-template-columns: 1fr 1fr;
   }
 }
-
 @media (max-width: 800px) {
-  .top,
-  .bund {
-    display: none;
+  .ikoner_mobil {
+    padding: 0 100px 0 100px;
+  }
+  .hjerne,
+  .graf {
+    margin-top: 80px;
   }
 }
