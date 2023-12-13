@@ -86,14 +86,14 @@ header a {
   text-decoration: none;
   color: #333333;
 }
-a:visited {
+/* a:visited {
   text-decoration: none;
   color: #333333;
 }
 
 a:hover {
   color: #04668c;
-}
+} */
 
 /***********************************  LISTER  ***********************************/
 
