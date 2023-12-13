@@ -1,0 +1,49 @@
+img {
+  width: 100%;
+}
+.om_os-1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  margin-top: 50px;
+  padding: 25px;
+}
+
+.baggrundsfirgur_blaa {
+  background-image: url("../img/baggrundsfirgur_blaa.svg");
+  margin-bottom: 50px;
+  background-size: cover;
+  min-height: 300px;
+  aspect-ratio: 1521 / 748;
+  width: 100%;
+}
+
+.tekst1 {
+  position: relative;
+  padding: 2rem;
+}
+
+.hvem_er_vi {
+  display: grid;
+  place-items: center;
+}
+.hvem_er_vi div {
+  padding: 10px;
+}
+
+.hex {
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.gruppebillede {
+  padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .om_os-1_1_1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    margin: 10px;
+    gap: 22px;
+  }
+}
