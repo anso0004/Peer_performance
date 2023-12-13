@@ -1,6 +1,7 @@
 img {
   width: 100%;
 }
+/* -------------------------------------Mobilsite------------------------------------*/
 .om_os-1_1_1 {
   display: grid;
   grid-template-columns: 1fr;
@@ -12,6 +13,10 @@ img {
 .tekst1 {
   position: relative;
   padding: 2rem;
+}
+.tekst2 {
+  margin-left: 5px;
+  padding: 5px;
 }
 
 .hvem_er_vi {
@@ -30,11 +35,48 @@ img {
   padding: 10px;
 }
 
+.blaa {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  grid-template-rows: auto;
+
+  padding: 25px;
+}
+/* ---------------------------------logo------------------------------------------ */
+.logo_icon {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .logo_icon {
+    display: grid;
+  }
+}
+
+/*---------------------------------------- website ----------------------------- */
 @media screen and (min-width: 800px) {
   .om_os-1_1_1 {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
     margin: 10px;
     gap: 22px;
+  }
+
+  .blaa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+  }
+
+  .logo_icon {
+    width: 54%;
+    padding: 10px;
+    margin-left: 6rem;
+  }
+
+  .tekst2 {
+    margin-left: 43px;
+    padding: 78px;
   }
 }
