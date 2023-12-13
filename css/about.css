@@ -6,6 +6,7 @@ img {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   margin-top: 50px;
+  padding: 25px;
 }
 
 .baggrundsfirgur_blaa {
@@ -32,6 +33,10 @@ img {
 
 .hex {
   clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.gruppebillede {
+  padding: 10px;
 }
 
 @media screen and (min-width: 800px) {
