@@ -13,10 +13,10 @@
 
 /***********************************  TEKST  ***********************************/
 
-.pf {
+/* .pf {
   font-size: 0.75rem;
   padding: 0;
-}
+} */
 
 /***********************************  FLEX  ***********************************/
 
@@ -99,7 +99,7 @@
 } */
 
 /***********************************  KNAPPER  ***********************************/
-
+/* 
 .knap_1 {
   background-color: var(--gul);
   border-radius: 5px;
@@ -147,7 +147,7 @@ button {
   color: #f2f2f2;
   text-transform: uppercase;
   width: fit-content;
-}
+} */
 
 /**********************************  SPECIALS  **********************************/
 
@@ -199,6 +199,8 @@ form {
   font-family: "Open Sans", sans-serif;
   font-size: 0.75rem;
   color: #f2f2f2;
+
+  margin: 2rem 0 0;
 }
 
 label,
@@ -212,10 +214,6 @@ select {
   display: grid;
   gap: 1rem;
 } */
-
-form {
-  margin: 2rem 0 0;
-}
 
 /***********************************  FOOTER  ***********************************/
 
@@ -255,7 +253,7 @@ footer {
 /***********************************  LISTEPUNKTER  ***********************************/
 
 /* Nedenstående er lånt herfra https://codepen.io/toianw/pen/YqEqrz */
-
+/* 
 li {
   list-style-type: none;
   display: inline-block;
@@ -282,7 +280,7 @@ li > a:hover::after,
 li > a.active-nav::after {
   width: 100%;
   background: #ffa600;
-}
+} */
 
 /***********************************  DESKTOP  ***********************************/
 
