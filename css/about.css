@@ -80,6 +80,7 @@ img {
     padding: 78px;
   }
 
+  /* ----------------------------hover----------------------------------------------- */
   .Anders .image-container {
     position: relative;
     width: 100%;
@@ -87,7 +88,7 @@ img {
 
   .Anders .image-container .hover-img {
     position: absolute;
-    top: -27px;
+    top: -32px;
     left: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -103,7 +104,7 @@ img {
 
   .Jonthan .image-container .hover-img {
     position: absolute;
-    top: -27px;
+    top: -33px;
     left: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -119,7 +120,7 @@ img {
 
   .Nermin .image-container .hover-img {
     position: absolute;
-    top: -8%;
+    top: -32px;
     left: 0;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
