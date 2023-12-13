@@ -14,6 +14,12 @@ video {
   width: 100%;
 }
 
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #d2d2d2;
+}
+
 /*********************************** HEXAGONER ****************************/
 /******* GRØN HEXAGON *******/
 .hex_3 {
@@ -38,18 +44,46 @@ video {
   padding-top: 3.5rem;
 }
 /******* FIGUR FJERNER TOPPEN *******/
-.top {
+/* .top {
   visibility: hidden;
-}
+} */
 
 /******* FIGUR FJERNER BUNDEN *******/
-.bund {
+/* .bund {
   visibility: hidden;
-}
+} */
 /******* CITAT STYLING *******/
 .citat {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  text-transform: none;
+  font-weight: 400;
+}
+
+/******************************** FEEDBACK ********************/
+
+.blaa_bagrund_feedback {
+  height: auto;
   background-color: #022e40;
-  color: #f2f2f2;
+  padding-top: 3.5rem;
+}
+
+.instagram_tekst {
+  display: flex;
+  flex-direction: column;
+  gap: 30%;
+}
+.instagram_billeder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.instagram_billeder img {
+  width: 100%;
+  margin: 0;
 }
 
 /****************************** DESKTOP ****************************/
@@ -61,13 +95,14 @@ video {
   }
 
   .foerste_del {
+    display: flex;
+    flex-direction: column;
     margin-top: 2rem;
+    padding-right: 3rem;
   }
-  #community_overskrift {
-    margin-left: -8rem;
-  }
+
   .community_tekst {
-    margin-left: 7rem;
+    margin-left: 2rem;
     margin-top: 2rem;
     padding-right: 4rem;
   }
@@ -83,7 +118,7 @@ video {
   .klub_1_raekke {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
+    gap: 4%;
     margin-bottom: 2rem;
   }
 
@@ -94,20 +129,20 @@ video {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 9rem;
-    gap: 3rem;
+    gap: 4%;
     width: 70%;
   }
   /******* HEXAGON 3 (GRØN BAGGRUND) *******/
   .hex_3 {
     clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
     background-color: #daebd2;
-    padding: 2.5rem;
+    padding: 4%;
   }
   /******* HEXAGON 3 (BLÅ BAGGRUND) *******/
   .hex_4 {
     clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
     background-color: #dbeef5;
-    padding: 2.5rem;
+    padding: 4%;
   }
 
   /***************************** CITAT DESKTOP *************************/
@@ -124,16 +159,36 @@ video {
     align-items: center;
   }
   /******* FIGUR PÅSÆTTER TOPPEN *******/
-  .top {
+  /* .top {
     visibility: visible;
-  }
+  } */
 
   /******* FIGUR PÅSÆTTER BUNDEN *******/
-  .bund {
+  /* .bund {
     visibility: visible;
-  }
+  } */
   /*********************************** FEEDBACK ***************************/
-  .feedback {
-    margin-top: -2rem;
+
+  .blaa_bagrund_feedback {
+    height: auto;
+  }
+  .instagram_alt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5%;
+  }
+  .instagram_tekst {
+    color: #f2f2f2;
+  }
+
+  .instagram_billeder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+    width: 100%;
+  }
+
+  .instagram_billeder img {
+    width: 100%;
   }
 }

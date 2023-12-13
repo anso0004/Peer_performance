@@ -11,6 +11,13 @@
   --font_2: "Fugaz One", sans-serif;
 }
 
+/***********************************  TEKST  ***********************************/
+
+.pf {
+  font-size: 0.75rem;
+  padding: 0;
+}
+
 /***********************************  FLEX  ***********************************/
 
 .flex_row {
@@ -21,6 +28,10 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin: 2rem auto;
+}
+.flex_checkmark {
+  align-items: center;
 }
 
 /***********************************  BILLEDER  ***********************************/
@@ -30,9 +41,42 @@
   margin: 0.25rem;
 }
 
-.video {
-  height: 450px;
+.icon_social {
+  margin: 0;
 }
+
+/***********************************  VIDEO  ***********************************/
+
+.ramme {
+  position: relative;
+  padding: 0 2rem 2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 65%;
+  right: 10%;
+}
+
+.video {
+  border-radius: 5px;
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+}
+
+/* @media (min-aspect-ratio: 16/9) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video {
+    width: auto;
+    height: 100%;
+  }
+} */
 
 /***********************************  HEXAGONER  ***********************************/
 
@@ -82,6 +126,14 @@
   color: #ffa600;
   text-transform: uppercase;
   width: fit-content;
+}
+
+.knap_2:visited {
+  color: #ffa600;
+}
+.knap_2:hover {
+  background-color: #ffa600;
+  color: #f2f2f2;
 }
 
 button {
@@ -161,6 +213,10 @@ select {
   gap: 1rem;
 } */
 
+form {
+  margin: 2rem 0 0;
+}
+
 /***********************************  FOOTER  ***********************************/
 
 /* .social_flex {
@@ -192,6 +248,42 @@ footer {
   padding: 0;
 } */
 
+footer {
+  background-color: #ededed;
+}
+
+/***********************************  LISTEPUNKTER  ***********************************/
+
+/* Nedenstående er lånt herfra https://codepen.io/toianw/pen/YqEqrz */
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 5px 10px;
+}
+
+li > a {
+  display: inline-block;
+  position: relative;
+}
+
+li > a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+li > a:hover::after,
+li > a.active-nav::after {
+  width: 100%;
+  background: #ffa600;
+}
+
 /***********************************  DESKTOP  ***********************************/
 
 @media (min-width: 800px) {
@@ -220,7 +312,7 @@ footer {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 4rem;
     align-items: center;
 
     margin: 2rem 10%;
@@ -236,5 +328,15 @@ footer {
 
   .rum {
     margin: 2rem 10%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .luft {
+    padding: 0;
   }
 }
