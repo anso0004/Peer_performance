@@ -79,4 +79,54 @@ img {
     margin-left: 43px;
     padding: 78px;
   }
+
+  /* ----------------------------hover----------------------------------------------- */
+  .Anders .image-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .Anders .image-container .hover-img {
+    position: absolute;
+    top: -32px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .Anders .image-container:hover .hover-img {
+    opacity: 1;
+  }
+  .Jonthan .image-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .Jonthan .image-container .hover-img {
+    position: absolute;
+    top: -33px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .Jonthan .image-container:hover .hover-img {
+    opacity: 1;
+  }
+  .Nermin .image-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .Nermin .image-container .hover-img {
+    position: absolute;
+    top: -32px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .Nermin .image-container:hover .hover-img {
+    opacity: 1;
+  }
 }
