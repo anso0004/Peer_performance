@@ -10,10 +10,13 @@ img {
   padding: 25px;
 }
 
-.tekst1 { 
-padding: 15rem;
-margin-top: -143px;
-margin-left: 47px;
+.tekst1 {
+  padding: 1rem;
+}
+
+.citat {
+  font-size: 2rem;
+  font-family: "Fugaz One", sans-serif;
 }
 .tekst2 {
   margin-left: 5px;
@@ -33,9 +36,8 @@ margin-left: 47px;
 }
 
 .gruppebillede {
-  padding: 51px;
-  margin-top: -176px;
-}
+  padding: 22px;
+  margin-top: -8px;
 }
 
 .blaa {
@@ -93,9 +95,29 @@ margin-left: 47px;
     margin-left: 6rem;
   }
 
+  .tekst1 {
+    padding: 15rem;
+    margin-top: -143px;
+    margin-left: 47px;
+  }
+
+  .citat {
+    font-size: 3rem;
+    font-family: "Fugaz One", sans-serif;
+  }
+
   .tekst2 {
     margin-left: 43px;
     padding: 78px;
+  }
+
+  .Nermin_h3 {
+    margin-top: 47px;
+  }
+
+  .gruppebillede {
+    padding: 51px;
+    margin-top: -176px;
   }
 
   /* ---------------------------- tilføjer hover----------------------------------------------- */
