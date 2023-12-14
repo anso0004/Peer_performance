@@ -10,9 +10,10 @@ img {
   padding: 25px;
 }
 
-.tekst1 {
-  position: relative;
-  padding: 2rem;
+.tekst1 { 
+padding: 15rem;
+margin-top: -143px;
+margin-left: 47px;
 }
 .tekst2 {
   margin-left: 5px;
@@ -32,7 +33,9 @@ img {
 }
 
 .gruppebillede {
-  padding: 10px;
+  padding: 51px;
+  margin-top: -176px;
+}
 }
 
 .blaa {
@@ -43,6 +46,21 @@ img {
 
   padding: 25px;
 }
+
+/* --------------------------------fjerner hover------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+  .Anders .image-container .hover-img {
+    display: none;
+  }
+  .Jonthan .image-container .hover-img {
+    display: none;
+  }
+  .Nermin .image-container .hover-img {
+    display: none;
+  }
+}
+
 /* ---------------------------------logo------------------------------------------ */
 .logo_icon {
   display: none;
@@ -78,5 +96,55 @@ img {
   .tekst2 {
     margin-left: 43px;
     padding: 78px;
+  }
+
+  /* ---------------------------- tilføjer hover----------------------------------------------- */
+  .Anders .image-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .Anders .image-container .hover-img {
+    position: absolute;
+    top: -32px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .Anders .image-container:hover .hover-img {
+    opacity: 1;
+  }
+  .Jonthan .image-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .Jonthan .image-container .hover-img {
+    position: absolute;
+    top: -33px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .Jonthan .image-container:hover .hover-img {
+    opacity: 1;
+  }
+  .Nermin .image-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .Nermin .image-container .hover-img {
+    position: absolute;
+    top: -32px;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .Nermin .image-container:hover .hover-img {
+    opacity: 1;
   }
 }

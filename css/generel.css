@@ -6,11 +6,11 @@
 body {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: #333333;
+  background-color: #d2d2d2;
 }
 
 main {
-  background-color: #f2f2f2;
+  background-color: #f9f9f9;
   overflow: hidden;
 }
 
@@ -29,12 +29,19 @@ img {
   margin: 0;
 }
 
+.logo_footer {
+  width: 200px;
+  padding: 1rem 0;
+  margin: 0;
+}
+
 /***********************************  TEKST  ***********************************/
 
 h1 {
   font-family: "Fugaz One", sans-serif;
   font-size: 3rem;
   text-transform: uppercase;
+  text-align: center;
   color: #333333;
   margin: 0;
 }
@@ -57,7 +64,7 @@ h3 {
 
 h4 {
   font-family: "Open Sans", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-style: italic;
 
   color: #333333;
@@ -66,7 +73,7 @@ h4 {
 
 p {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #333333;
   margin: 0;
   max-width: 65ch;
@@ -75,6 +82,26 @@ p {
 .pf {
   font-size: 0.75rem;
   padding: 0;
+}
+
+.citat {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+
+  color: #333333;
+  margin: 0;
+}
+
+.citat_af {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-style: italic;
+
+  color: #333333;
+  margin: 1rem 0 0;
 }
 
 .lys_txt {
@@ -127,8 +154,6 @@ header nav ul {
 
 li {
   list-style-type: none;
-  display: inline-block;
-  margin: 5px 10px;
 }
 
 li > a {
@@ -156,16 +181,30 @@ li > a.active-nav::after {
 /***********************************  KNAPPER  ***********************************/
 
 .knap_1 {
-  background-color: var(--gul);
+  background-color: #ffa600;
+  border-style: solid;
+  border-color: #ffa600;
   border-radius: 5px;
   padding: 0.5rem;
+  margin-top: 1rem;
 
-  font-family: var(--font_1);
-  font-size: 0.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.7rem;
   font-weight: 600;
-  color: var(--lys);
+  color: #f2f2f2;
   text-transform: uppercase;
   width: fit-content;
+}
+
+.knap_1:visited {
+  color: #f2f2f2;
+}
+
+.knap_1:hover {
+  border-style: solid;
+  border-color: #ffa600;
+  background-color: transparent;
+  color: #ffa600;
 }
 
 .knap_2 {
@@ -176,7 +215,7 @@ li > a.active-nav::after {
   margin-top: 1rem;
 
   font-family: "Open Sans", sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: #ffa600;
   text-transform: uppercase;
@@ -193,23 +232,56 @@ li > a.active-nav::after {
 
 button {
   background-color: #ffa600;
+  border-style: solid;
+  border-color: #ffa600;
   border-radius: 5px;
   padding: 0.5rem;
+  margin-top: 1rem;
 
   font-family: "Open Sans", sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: #f2f2f2;
   text-transform: uppercase;
   width: fit-content;
 }
 
+button:visited {
+  color: #f2f2f2;
+}
+
+button:hover {
+  border-style: solid;
+  border-color: #ffa600;
+  background-color: transparent;
+  color: #ffa600;
+}
+
+.button_luft {
+  padding: 2rem 0rem;
+}
+
 /***********************************  FOOTER  ***********************************/
+
+footer {
+  background-color: #ededed;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 4rem;
+}
+
+.pf {
+  font-size: 1rem;
+  padding: 0;
+}
 
 .social_flex {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
 }
 .social_icon_flex {
   display: flex;
@@ -218,21 +290,6 @@ button {
   justify-items: center;
   gap: 1rem;
   margin: 1rem 0;
-}
-
-footer {
-  background-color: #022e40;
-  padding: 2rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
-}
-
-.pf {
-  font-size: 1rem;
-  padding: 0;
 }
 
 /***********************************  HEADER  ***********************************/
@@ -246,6 +303,8 @@ header {
   background-color: #f2f2f2;
   padding: 0.5rem;
   margin-bottom: 0;
+
+  box-shadow: 0 0 5px #52525280;
 }
 
 /***********************************  BURGERMENU  ***********************************/
@@ -307,28 +366,6 @@ header {
   }
 }
 
-/***********************************  HEADER DESKTOP  ***********************************/
-
-@media (min-width: 800px) {
-  /* HEADER */
-  header {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  header nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0.5rem 2rem;
-    gap: 2rem;
-    overflow-x: auto;
-  }
-}
-
 /***********************************  FORM  ***********************************/
 
 form {
@@ -336,10 +373,9 @@ form {
   border-radius: 8px;
   display: grid;
   gap: 0.75rem;
-  max-width: 10px;
 
   font-family: "Open Sans", sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   color: #f2f2f2;
 
   margin: 2rem 0 0;
@@ -347,14 +383,24 @@ form {
 
 label,
 input,
-textarea,
 select {
   display: block;
+  max-width: 90%;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+textarea {
+  display: block;
+  max-width: 100%;
+  height: 4rem;
+  border-radius: 5px;
+  border: none;
 }
 
 .form-felt {
   display: grid;
-  gap: 1rem;
 }
 
 /***********************************  SPECIALS  ***********************************/
@@ -373,13 +419,7 @@ select {
 }
 
 .luft {
-  padding: 2rem 1.5rem;
-}
-
-@media (min-width: 800px) {
-  .rum {
-    margin: 2rem 10%;
-  }
+  padding: 1rem 1.5rem;
 }
 
 /***********************************  HEXAGONER  ***********************************/
@@ -417,4 +457,54 @@ select {
 .blaa {
   background-color: #022e40;
   padding: 2rem 1.5rem;
+}
+
+/***********************************  DESKTOP  ***********************************/
+
+@media (min-width: 800px) {
+  /* HEADER */
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    gap: 2rem;
+    overflow-x: auto;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .rum {
+    margin: 2rem 10%;
+  }
+
+  /************** TEKSTER **************/
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 3.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }

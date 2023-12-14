@@ -10,14 +10,6 @@
   --font_1: "Open Sans", sans-serif;
   --font_2: "Fugaz One", sans-serif;
 }
-
-/***********************************  TEKST  ***********************************/
-
-/* .pf {
-  font-size: 0.75rem;
-  padding: 0;
-} */
-
 /***********************************  FLEX  ***********************************/
 
 .flex_row {
@@ -49,20 +41,136 @@
 
 .ramme {
   position: relative;
-  padding: 0 2rem 2rem;
 }
 
 .overlay {
   position: absolute;
-  top: 65%;
+  top: 45%;
   right: 10%;
 }
 
 .video {
-  border-radius: 5px;
   aspect-ratio: 16/9;
   width: 100%;
   height: auto;
+  margin-bottom: 2rem;
+}
+
+/***********************************  HEXAGONER  ***********************************/
+
+.hex_3 {
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  background-color: #daebd2;
+  width: 100%;
+  padding: 5%;
+}
+.hex_4 {
+  clip-path: polygon(50% 0, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+  background-color: #dbeef5;
+  width: 100%;
+  padding: 5%;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+/* 
+.hex_ramme {
+  position: relative;
+}
+
+.img_1 {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.img_2 {
+  position: absolute;
+  width: 101%;
+  top: -32px;
+  left: 0;
+} */
+
+/***********************************  DESKTOP  ***********************************/
+
+@media (min-width: 800px) {
+  /* HEADER
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0.5rem 2rem;
+    gap: 2rem;
+    overflow-x: auto;
+  } */
+
+  .order {
+    order: -1;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+
+    margin: 2rem 10%;
+  }
+
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+
+    margin: 2rem 10%;
+  }
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 10%;
+  }
+
+  .rum {
+    margin: 2rem 10%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .luft {
+    padding: 0;
+  }
+
+  .ramme {
+    padding: 2rem 2rem;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 65%;
+    right: 10%;
+  }
+  .video {
+    border-radius: 5px;
+    margin: 0;
+  }
 }
 
 /* @media (min-aspect-ratio: 16/9) {
@@ -96,6 +204,13 @@
   aspect-ratio: 1/1;
   width: 20%;
   padding: 3rem;
+} */
+
+/***********************************  TEKST  ***********************************/
+
+/* .pf {
+  font-size: 0.75rem;
+  padding: 0;
 } */
 
 /***********************************  KNAPPER  ***********************************/
@@ -245,10 +360,10 @@ footer {
   font-size: 1rem;
   padding: 0;
 } */
-
+/* 
 footer {
   background-color: #ededed;
-}
+} */
 
 /***********************************  LISTEPUNKTER  ***********************************/
 
@@ -282,10 +397,9 @@ li > a.active-nav::after {
   background: #ffa600;
 } */
 
-/***********************************  DESKTOP  ***********************************/
-
+/* 
 @media (min-width: 800px) {
-  /* HEADER
+  HEADER
   header {
     position: sticky;
     top: 0;
@@ -301,40 +415,5 @@ li > a.active-nav::after {
     padding: 0.5rem 2rem;
     gap: 2rem;
     overflow-x: auto;
-  } */
-
-  .order {
-    order: -1;
   }
-
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-
-    margin: 2rem 10%;
-  }
-
-  .grid_2-1 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-
-    margin: 2rem 10%;
-  }
-
-  .rum {
-    margin: 2rem 10%;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .luft {
-    padding: 0;
-  }
-}
+} */
