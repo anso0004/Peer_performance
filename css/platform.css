@@ -2,17 +2,33 @@
   width: 42%;
   height: auto;
 }
+.app_billede img {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .vision_con {
   position: relative;
 }
+.grid_vision {
+  z-index: 1;
+}
 .hex_1_placering {
   position: absolute;
+  top: 41%;
+  width: 23%;
+  left: 81%;
 }
 .hex_2_placering {
   position: absolute;
+  top: -1%;
+  left: -11%;
+  width: 35%;
 }
 .order {
   order: -1;
+}
+.zindex {
+  z-index: 1;
 }
 @media (min-width: 800px) {
   /**** IKONER ****/
@@ -20,18 +36,24 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 2rem 10%;
-    gap: 40px;
+    /* margin: 2rem 10%;
+    gap: 40px; */
+    margin-bottom: 10rem;
+    margin-top: 3rem;
   }
   .blinkende_paere,
   .graf {
     padding: 0 50px 0 50px;
   }
+  .ikoner img {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
   /**** APP ****/
   .grid_app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 2rem 10%;
+    /* margin: 2rem 10%; */
     gap: 4rem;
   }
   .flex_tekst {
@@ -40,19 +62,26 @@
     gap: 0.5rem;
     align-self: center;
   }
+  .flex_tekst_app {
+    padding-right: 37px;
+  }
 
   /**** VISION ****/
   .grid_vision {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
     margin: 2rem 10%;
+    gap: 4rem;
   }
 
   /**** TILMELDING ****/
   .grid_tilmelding {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  .tilmelding_tekst {
+    align-self: center;
   }
 }
 @media (max-width: 800px) {
@@ -62,5 +91,21 @@
   .hjerne,
   .graf {
     margin-top: 80px;
+  }
+  .hex_1_placering {
+    position: absolute;
+    top: 57%;
+    width: 47%;
+    left: 69%;
+  }
+  .hex_2_placering {
+    position: absolute;
+    top: -1%;
+    left: -9%;
+    width: 34%;
+  }
+  .vision_billede,
+  .flex_tekst {
+    position: relative;
   }
 }
