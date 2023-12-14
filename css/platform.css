@@ -1,6 +1,6 @@
 .platform_overskrift {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 60px;
 }
 
 .grid_ikoner img {
@@ -13,6 +13,8 @@
 }
 .vision_con {
   position: relative;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 .grid_vision {
   z-index: 1;
@@ -92,6 +94,10 @@
 @media (max-width: 800px) {
   .ikoner_mobil {
     padding: 0 100px 0 100px;
+  }
+  .ikoner_tekst {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .hjerne,
   .graf {

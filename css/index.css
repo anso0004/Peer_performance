@@ -71,6 +71,28 @@
   padding: 5%;
 }
 
+.hex_baggrund {
+  position: relative;
+}
+
+.hex_1_place {
+  position: absolute;
+  top: 1%;
+  left: 68%;
+  width: 47%;
+}
+.hex_2_place {
+  position: absolute;
+  top: 39%;
+  left: -21%;
+  width: 78%;
+}
+
+.frem {
+  z-index: 5;
+  position: relative;
+}
+
 .grid_1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -170,6 +192,19 @@
   .video {
     border-radius: 5px;
     margin: 0;
+  }
+
+  .hex_1_place {
+    position: absolute;
+    top: 27%;
+    left: 68%;
+    width: 35%;
+  }
+  .hex_2_place {
+    position: absolute;
+    top: 24%;
+    left: -9%;
+    width: 50%;
   }
 }
 
