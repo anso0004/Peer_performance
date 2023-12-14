@@ -27,9 +27,7 @@ body {
 /*****************************  VI SKABER *************************/
 
 .community_tekst {
-  margin-left: 2rem;
   margin-top: 2rem;
-  padding-right: 4rem;
   padding-bottom: 4%;
 }
 
@@ -87,6 +85,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30%;
+  margin-bottom: 2rem;
 }
 .instagram_billeder {
   display: grid;
@@ -94,6 +93,7 @@ body {
   gap: 2px;
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-bottom: 4rem;
 }
 
 .instagram_billeder img {
