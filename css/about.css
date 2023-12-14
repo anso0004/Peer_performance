@@ -10,9 +10,10 @@ img {
   padding: 25px;
 }
 
-.tekst1 {
-  position: relative;
-  padding: 2rem;
+.tekst1 { 
+padding: 15rem;
+margin-top: -143px;
+margin-left: 47px;
 }
 .tekst2 {
   margin-left: 5px;
@@ -32,7 +33,9 @@ img {
 }
 
 .gruppebillede {
-  padding: 10px;
+  padding: 51px;
+  margin-top: -176px;
+}
 }
 
 .blaa {
