@@ -1,3 +1,16 @@
+/***********************************  VARIABLER  ***********************************/
+
+html {
+  --gul: #ffa600;
+  --blaa: #022e40;
+  --gron: #6aa64e;
+  --lys: #f2f2f2;
+  --mork: #333333;
+
+  --font_1: "Open Sans", sans-serif;
+  --font_2: "Fugaz One", sans-serif;
+}
+
 /***********************************  RESET + BASE  ***********************************/
 * {
   box-sizing: border-box;
@@ -42,7 +55,7 @@ h1 {
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
-  color: #333333;
+  color: var(--mork);
   margin: 0;
 }
 
@@ -50,7 +63,7 @@ h2 {
   font-family: "Fugaz One", sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: #333333;
+  color: var(--mork);
   margin: 0;
 }
 
@@ -58,7 +71,7 @@ h3 {
   font-family: "Fugaz One", sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
-  color: #333333;
+  color: var(--mork);
   margin: 0;
 }
 
@@ -67,14 +80,14 @@ h4 {
   font-size: 2rem;
   font-style: italic;
 
-  color: #333333;
+  color: var(--mork);
   margin: 0;
 }
 
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
-  color: #333333;
+  color: var(--mork);
   margin: 0;
   max-width: 65ch;
 }
@@ -90,7 +103,7 @@ p {
   font-weight: 500;
   font-style: italic;
 
-  color: #333333;
+  color: var(--mork);
   margin: 0;
 }
 
@@ -100,7 +113,7 @@ p {
   font-weight: 500;
   font-style: italic;
 
-  color: #333333;
+  color: var(--mork);
   margin: 1rem 0 0;
 }
 
@@ -112,11 +125,11 @@ p {
 
 a {
   text-decoration: none;
-  color: #333333;
+  color: var(--mork);
 }
 header a {
   text-decoration: none;
-  color: #333333;
+  color: var(--mork);
 }
 /* a:visited {
   text-decoration: none;
@@ -135,7 +148,7 @@ ul {
   font-weight: bold;
 
   text-transform: uppercase;
-  color: #333333;
+  color: var(--mork);
   padding: 1rem 1rem 1rem 1rem;
   margin: 0;
 }
