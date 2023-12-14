@@ -480,6 +480,12 @@ textarea {
     overflow-x: auto;
   }
 
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   .rum {
     margin: 2rem 10%;
   }
